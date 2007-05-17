@@ -1,0 +1,12 @@
+inherit distutils
+
+DESCRIPTION="Python libvorbis bindings"
+HOMEPAGE="http://ekyo.nerim.net/software/pyogg/index.html"
+SRC_URI="http://ekyo.nerim.net/software/pyogg/${ORIG_PN}-${PV}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	${PYTHON} config_unix.py || error "config_unix.py failed"
+	distutils_compile
+}
