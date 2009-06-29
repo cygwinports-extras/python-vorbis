@@ -1,4 +1,4 @@
 category: Python Audio
-requires: cygwin libogg0 libvorbis0 libvorbisenc2 libvorbisfile3 python python-ogg
+requires: libogg0 libvorbis0 libvorbisenc2 libvorbisfile3 python python-ogg
 sdesc: "Python bindings for libvorbis"
 ldesc: "Official Python bindings for libvorbis"
