@@ -1,8 +1,10 @@
+ORIG_PN="pyvorbis"
 inherit distutils
 
 DESCRIPTION="Python libvorbis bindings"
 HOMEPAGE="http://ekyo.nerim.net/software/pyogg/index.html"
 SRC_URI="http://ekyo.nerim.net/software/pyogg/${ORIG_PN}-${PV}.tar.gz"
+PATCH_URI="1.4-no-undefined.patch"
 
 src_compile() {
 	lndirs
